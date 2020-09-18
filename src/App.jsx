@@ -1,6 +1,7 @@
 import React, {lazy, Suspense} from 'react';
 import './App.css';
 import 'antd/dist/antd.css';
+import logo from './logo.png'
 
 import {
     HashRouter as Router,
@@ -17,7 +18,6 @@ import {
     UserOutlined,
     HistoryOutlined
 } from '@ant-design/icons';
-
 const {Search} = Input;
 const searchStyle = {
     width: "180px",
@@ -42,7 +42,7 @@ function App() {
                     <header className="App-header">
                         <div className="top">
                             <a href="/#">
-                                <img className="block" src="http://192.168.5.22:8080/img/logo.74316725.png"
+                                <img className="block" src={logo}
                                      alt="网站logo图片"/>
                             </a>
                             <ul className="nav">
